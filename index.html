@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traceroute UD - El Grupo Más Melo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="" defer></script>
+    <script src="/scripts/routes.js" defer></script>
+    <script src="/scripts/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div id="introduction">
+            <h1 id="title">TRACEROUTE UD - EL GRUPO MÁS MELO</h1>
+            <ul id="group-members">
+                <li class="member-item">
+                    <p>Miguel Nicolás Díaz Vargas - 20202020054</p>
+                </li>
+                <li class="member-item">
+                    <p>Jhostyn David García Urrego - 20191020112</p>
+                </li>
+            </ul>
+            <p>Esta pagina te permite visualizar la traza de ruta de varios puntos ubicados sobre proveedores de servicios
+                de manera local y a través de servidores públicos. </p>
+        </div>
+        <div id="row-container">
+            <div id="map">
+            </div>
+            <div id="configuration">
+                <p id="continent">
+                    <label for="continent-selector">1. Por favor seleccione el continente:</label>
+                    <select name="continent-selector" id="continent-selector">
+                    </select>
+                </p>
+                <p id="server">
+                    <label for="server-selector">2. Por favor seleccione el sevidor:</label>
+                    <select name="server-selector" id="server-selector">
+                    </select>
+                </p>
+                <p id="address">
+                    <label for="address-selector">3. Por favor seleccione la direccion:</label>
+                    <select name="address-selector" id="address-selector">
+                    </select>
+                </p>
+                <p id="btn">
+                    <button>Trazar ruta</button>
+                </p>
+                <div id="route">
+                    <p>Dirección Inicial: <span id="initial-address"></span></p>
+                    <p>Número de saltos: <span id="break-number"></span></p>
+                    <p>Dirección IP: <span id="ip-address"></span></p>
+                    <p>Tiempo promedio de respuesta: <span id="average-res-time"></span></p>
+                    <p>Dirección final de destino: <span id="final-address"></span></p>
+                    <p>Cantidad de puntos muertos: <span id="dead-breaks-number">0</span></p>
+                    <p>Ruta:</p>
+                    <ul id="route-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #C5FCEF;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 10rem ;
+}
+
+#introduction {
+    position: relative;
+    top: -2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #6fe7cb;
+    padding: 2rem 10% 1rem 10%;
+    border-radius: 30px;
+    border: 2px solid rgb(35, 35, 35);
+    box-shadow: 0 5px 5px rgb(35, 35, 35);
+}
+
+#introduction h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#introduction ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#row-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    padding: 0 10%;
+}
+
+#map {
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5px;
+    background-color: #6fe7cb;
+    border: 2px solid rgb(35, 35, 35);
+    box-shadow: 0 5px 5px rgb(35, 35, 35);
+}
+
+#configuration {
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+}
+
+#configuration #select-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#configuration p {
+    margin: 0.25rem;
+}
+
+#configuration label {
+    display: block;
+    text-align: left;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+#configuration select {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #9bf8e2;
+    border: 2px solid rgb(35, 35, 35);
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 5px 5px rgb(35, 35, 35);
+}
+
+#configuration select option {
+    text-align: center;
+    font: inherit;
+}
+
+#configuration #server {
+    display: none;
+}
+
+#configuration #address {
+    display: none;
+}
+
+#configuration #btn {
+    display: none;
+}
+
+#configuration #btn button {
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #A374FF;
+    border: 2px solid rgb(35, 35, 35);
+    border-radius: 5px;
+    margin: 1rem;
+    font-weight: bold;
+    transition: 300ms;
+    box-shadow: 0 5px 5px rgb(35, 35, 35);
+}
+
+#configuration #btn button:hover {
+    background-color: #372261;
+    color: #ececec;
+}
+
+#configuration #route {
+    display: none;
+    text-align: left;
+}
+
+#configuration #route p {
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+#configuration #route span {
+    font-weight: normal;
+}
