@@ -149,7 +149,7 @@ function changeMapPosition(option) {
     for (let i = (routeListElement.children.length - 1); i >= 1; i--) {
         routeListElement.children[i].remove();
     }
-    // deadBreaksNumberPElement.textContent = 0;
+    deadBreaksNumberPElement.textContent = 0;
 
     for (let i = 0; i < address.breaks.length; i++) {
         let liElement = document.createElement("li");
